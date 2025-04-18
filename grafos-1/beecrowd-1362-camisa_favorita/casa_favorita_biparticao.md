@@ -6,7 +6,7 @@
 
 ## Contextualização
 
-O problema "Minha Camiseta Me Serve", do Beecrowd , consiste em verificar se é possível distribuir `N` camisetas entre `M` voluntários, de modo que:
+O problema "Minha Camiseta Me Serve", do Beecrowd  consiste em verificar se é possível distribuir `N` camisetas entre `M` voluntários, de modo que:
 
 - Cada voluntário receba exatamente uma camiseta.
 - Cada camiseta seja utilizada por no máximo um voluntário.
@@ -20,8 +20,6 @@ Trata-se de um problema de matching em grafo bipartido, que exige:
 
 
 ## Estratégia Utilizada
-
-A solução implementada seguiu os seguintes passos:
 
 1. Mapeamento de tamanhos (`XS` a `XXL`) para índices de 0 a 5.
 2. Geração de camisetas individuais com IDs únicos, respeitando a quantidade de cada tamanho.

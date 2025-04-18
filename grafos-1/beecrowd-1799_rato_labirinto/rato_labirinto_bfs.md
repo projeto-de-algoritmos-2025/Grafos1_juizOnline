@@ -7,7 +7,7 @@
 
 ## Contextualização
 
-O problema "O Rato no Labirinto", do Beecrowd, tem como objetivo encontrar a quantidade mínima de pontos que um rato deve visitar para ir da **Entrada** até um ponto intermediário (**Queijo**, representado por `*`) e de lá até a **Saída**.
+O problema "O Rato no Labirinto", do Beecrowd tem como objetivo encontrar a quantidade mínima de pontos que um rato deve visitar para ir da **Entrada** até um ponto intermediário (**Queijo**, representado por `*`) e de lá até a **Saída**.
 
 Trata-se de um problema clássico de busca em grafos, que exige:
 - Leitura e construção correta de um grafo não-direcionado.
@@ -20,7 +20,8 @@ Trata-se de um problema clássico de busca em grafos, que exige:
 A solução proposta seguiu a seguinte abordagem:
 
 1. Leitura da entrada e construção do grafo usando estrutura de listas de adjacência.
-2. Contagem do total de nós visitados, somando os tamanhos dos dois caminhos (permitindo a contagem duplicada do `*`, conforme o enunciado exige).
+2. Busca em largura BFS para encontrar o caminho mais curto.
+3. Contagem do total de nós visitados, somando os tamanhos dos dois caminhos (permitindo a contagem duplicada do `*` (queijo), conforme o enunciado exige).
 
 # Codigo
 
