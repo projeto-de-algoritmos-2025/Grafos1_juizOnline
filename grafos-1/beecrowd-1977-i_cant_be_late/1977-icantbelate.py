@@ -28,7 +28,7 @@ def main():
                 grafo[o] = []
             grafo[o].append((d, t))
 
-        # Dijkstra
+        # Define distâncias iniciais e inicia a fila com 'varzea' no tempo 0
         dist = {local: float('inf') for local in locais}
         dist['varzea'] = 0
         fila = [(0, 'varzea')]
