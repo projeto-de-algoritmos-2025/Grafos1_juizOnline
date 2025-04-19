@@ -29,6 +29,8 @@ Também implementamos uma lógica para escolher o horário correto do ônibus, c
 
 ## Resultado
 
+![erro_icantbelate](../../assets/lista1/icant_1977/icantbelate_solucionado.png)
+
 A lógica principal funcionou corretamente, mas a versão inicial apresentou erros de até **2 minutos nos testes finais**. Após algumas tentativas e ajustes no controle do tempo de embarque, a solução foi aceita.
 
 

@@ -29,6 +29,8 @@ Se em ambas as buscas todos os vértices forem visitados, então o grafo é cons
 
 ## Resultado
 
+![codigo_comeandgo](../../assets/lista1/come_1128/comeandgo_solucionado.png)
+
 Após os ajustes e revisão, a solução obteve sucesso nos testes do Beecrowd.  
 A lógica foi validada por meio da dupla DFS e passou corretamente em **100% dos casos de teste**.
 
