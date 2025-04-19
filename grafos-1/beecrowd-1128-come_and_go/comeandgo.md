@@ -15,8 +15,6 @@ Ele exige:
 
 # Estratégia Utilizada
 
-# Estratégia Utilizada
-
 Para resolver o problema, aplicamos duas buscas em profundidade (DFS), com o objetivo de verificar se é possível alcançar todos os pontos a partir de um vértice inicial, e também se todos os pontos conseguem retornar a esse vértice.
 
 O grafo foi representado com listas de adjacência, por ser leve e eficiente para percorrer os vizinhos. As duas DFS foram feitas de forma separada: uma usando o grafo conforme as conexões dadas, e outra considerando os caminhos no sentido inverso.

@@ -15,7 +15,6 @@ O problema pede para calcular o menor tempo que Anne leva para sair do trabalho,
 
 # Estratégia Utilizada
 
-# Estratégia Utilizada
 
 A solução foi baseada em uma variação da BFS adaptada para levar em conta os diferentes tempos de trajeto entre os locais. 
 
