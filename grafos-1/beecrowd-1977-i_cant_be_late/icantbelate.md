@@ -15,11 +15,13 @@ O problema pede para calcular o menor tempo que Anne leva para sair do trabalho,
 
 # Estratégia Utilizada
 
-Foi usada uma lista de adjacência com dicionário, pois os vértices são nomes de lugares, e a fila de prioridade foi implementada com `heapq`, garantindo que os caminhos com menor tempo acumulado fossem processados primeiro.
+# Estratégia Utilizada
 
-A escolha do Dijkstra se deu pela necessidade de otimizar o tempo de deslocamento, já que outras técnicas como BFS simples ou DFS não consideram pesos. Podemos entender o Dijkstra como uma versão da BFS com prioridade, adaptada para trabalhar com grafos ponderados.
+A solução foi baseada em uma variação da BFS adaptada para levar em conta os diferentes tempos de trajeto entre os locais. 
 
-O algoritmo calcula o tempo de chegada baseado no caminho mais curto, e ainda verifica se Anne vai se atrasar dependendo do ônibus que ela pegar.
+Como os caminhos possuem pesos positivos e os vértices são nomes de lugares, utilizamos uma estrutura de lista de adjacência com dicionário. Para garantir que os caminhos mais curtos fossem processados primeiro, usamos uma fila com prioridade, que sempre trata primeiro os menores tempos acumulados.
+
+Também implementamos uma lógica para escolher o horário correto do ônibus, considerando se Anne chegou ao ponto antes ou depois das 17h30. O tempo total foi calculado e, no final, verificamos se ela chegaria ou não até as 18h.
 
 
 # Código

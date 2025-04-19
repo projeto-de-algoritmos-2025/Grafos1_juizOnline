@@ -15,11 +15,14 @@ Ele exige:
 
 # Estratégia Utilizada
 
-Considerando que as ruas podem ser de mão única ou dupla, utilizei grafos fortemente conexos.
+# Estratégia Utilizada
 
-Escolhi usar duas buscas em profundidade (DFS), uma no grafo original e outra no grafo transposto com as direções invertidas. Se ambas alcançarem todos os vértices, então o grafo é considerado fortemente conexo.
+Para resolver o problema, aplicamos duas buscas em profundidade (DFS), com o objetivo de verificar se é possível alcançar todos os pontos a partir de um vértice inicial, e também se todos os pontos conseguem retornar a esse vértice.
 
-Representamos o grafo com listas de adjacência, por ser mais leve e apropriada para o número de vértices e operações de vizinhança.
+O grafo foi representado com listas de adjacência, por ser leve e eficiente para percorrer os vizinhos. As duas DFS foram feitas de forma separada: uma usando o grafo conforme as conexões dadas, e outra considerando os caminhos no sentido inverso.
+
+Se em ambas as buscas todos os vértices forem visitados, então o grafo é considerado totalmente conectado em ambos os sentidos, como exigido pelo enunciado.
+
 
 
 # Código
